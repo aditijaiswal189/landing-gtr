@@ -564,23 +564,23 @@ export const ZohoForm: React.FC = () => {
     document.body.appendChild(script);
   }, []);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+  //   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //     e.preventDefault();
+  //     const form = e.currentTarget;
+  //     const formData = new FormData(form);
 
-    try {
-      await fetch(form.action, {
-        method: "POST",
-        body: formData,
-        mode: "no-cors",
-      });
-      setSubmitted(true);
-      form.reset();
-    } catch {
-      alert("Submission failed. Please try again.");
-    }
-  };
+  //     try {
+  //       await fetch(form.action, {
+  //         method: "POST",
+  //         body: formData,
+  //         mode: "no-cors",
+  //       });
+  //       setSubmitted(true);
+  //       form.reset();
+  //     } catch {
+  //       alert("Submission failed. Please try again.");
+  //     }
+  //   };
 
   return (
     <>
