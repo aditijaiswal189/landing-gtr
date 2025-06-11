@@ -596,7 +596,7 @@ export const ZohoForm: React.FC = () => {
             </p>
           </div>
 
-          <form
+          {/* <form
             ref={formRef}
             id="webform919410000000916380"
             name="WebForm919410000000916380"
@@ -605,6 +605,16 @@ export const ZohoForm: React.FC = () => {
             acceptCharset="UTF-8"
             className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8"
             onSubmit={handleSubmit}
+          > */}
+          <form
+            ref={formRef}
+            id="webform919410000000916380"
+            name="WebForm919410000000916380"
+            method="POST"
+            action="https://crm.zoho.in/crm/WebToEntityForm?module=facebook_Inquiry_02"
+            acceptCharset="UTF-8"
+            onSubmit={handleSubmit}
+            className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8"
           >
             {/* Hidden Zoho Fields */}
             <input
