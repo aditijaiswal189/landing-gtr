@@ -36,15 +36,7 @@ export const ZohoRawForm: React.FC = () => {
       <input type="text" id="NAME" name="NAME">
     </div>
 
-    <div>
-      <label for="COBJ11CF4">First Name</label><br>
-      <input type="text" id="COBJ11CF4" name="COBJ11CF4">
-    </div>
-
-    <div>
-      <label for="COBJ11CF6">Last Name</label><br>
-      <input type="text" id="COBJ11CF6" name="COBJ11CF6">
-    </div>
+   
 
     <div>
       <label for="COBJ11CF5">What is your age?</label><br>
@@ -187,10 +179,7 @@ export const ZohoRawForm: React.FC = () => {
       </select>
     </div>
 
-    <div>
-      <label for="COBJ11CF20">Submission Date and Time</label><br>
-      <input type="text" id="COBJ11CF20" name="COBJ11CF20">
-    </div>
+   
 
     <div>
       <label for="COBJ11CF18">Additional Information</label><br>
@@ -249,3 +238,18 @@ export const ZohoRawForm: React.FC = () => {
     </>
   );
 };
+
+// <div>
+//   <label for="COBJ11CF4">First Name</label><br>
+//   <input type="text" id="COBJ11CF4" name="COBJ11CF4">
+// </div>
+
+// <div>
+//   <label for="COBJ11CF6">Last Name</label><br>
+//   <input type="text" id="COBJ11CF6" name="COBJ11CF6">
+// </div>
+
+// <div>
+//   <label for="COBJ11CF20">Submission Date and Time</label><br>
+//   <input type="text" id="COBJ11CF20" name="COBJ11CF20">
+// </div>
