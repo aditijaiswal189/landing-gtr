@@ -4,10 +4,10 @@ export const HeroSection: React.FC = () => {
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-4 sm:md-16">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Your Gateway to
-            <span className=" ml-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+            <span className=" ml-2 text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
               Global Opportunities
             </span>
           </h2>
@@ -19,19 +19,19 @@ export const HeroSection: React.FC = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-8 text-center">
             <div className="flex items-center space-x-2">
-              <Users className="h-6 w-6 text-blue-600" />
+              <Users className="h-6 w-6 text-red-600" />
               <span className="text-gray-700 font-semibold">
                 50,000+ Happy Clients
               </span>
             </div>
             <div className="flex items-center space-x-2">
-              <Award className="h-6 w-6 text-green-600" />
+              <Award className="h-6 w-6 text-red-600" />
               <span className="text-gray-700 font-semibold">
                 98% Success Rate
               </span>
             </div>
             <div className="flex items-center space-x-2">
-              <Globe className="h-6 w-6 text-purple-600" />
+              <Globe className="h-6 w-6 text-red-600" />
               <span className="text-gray-700 font-semibold">15+ Countries</span>
             </div>
           </div>

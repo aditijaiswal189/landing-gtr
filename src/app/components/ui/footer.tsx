@@ -1,8 +1,9 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { FormInput, Mail, Phone } from "lucide-react";
+import Link from "next/link";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-200 to-green-200 text-black py-12">
+    <footer className="bg-gradient-to-r from-red-200 to-orange-200 text-black py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
@@ -34,8 +35,10 @@ export const Footer: React.FC = () => {
                 <span>admin@gtrworldwide.in</span>
               </div>
               <div className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4" />
-                <span>India</span>
+                <FormInput className="h-4 w-4" />
+                <Link href="#form">
+                  <button>Fill Our Form</button>
+                </Link>
               </div>
             </div>
           </div>

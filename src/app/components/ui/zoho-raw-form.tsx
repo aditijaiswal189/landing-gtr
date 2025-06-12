@@ -1,11 +1,5 @@
 import React from "react";
 
-/**
- * ZohoRawForm
- *
- * This component injects the raw Zoho WebToEntityForm HTML (including scripts)
- * directly into the DOM via dangerouslySetInnerHTML, so Zoho's own JS can run.
- */
 export const ZohoRawForm: React.FC = () => {
   const html = `<!-- start Zoho WebToEntityForm -->
 <div id="crmWebToEntityForm" class="zcwf_lblLeft crmWebToEntityForm">
@@ -187,9 +181,9 @@ export const ZohoRawForm: React.FC = () => {
     </div>
 
     <!-- Submit buttons -->
-    <div style="margin-top:10px;">
-      <input type="submit" value="Submit">
-      <input type="reset"  value="Reset">
+    <div style="margin-top:10px;" class="btn-container">
+      <input class="submit" type="submit" value="Submit">
+      <input class="reset" type="reset"  value="Reset">
     </div>
   </form>
 
@@ -234,7 +228,16 @@ export const ZohoRawForm: React.FC = () => {
 
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <h3
+        id="form"
+        className="bg-red-100 font-bold text-red-600 text-center text-3xl pt-10"
+      >
+        Assessment Form
+      </h3>
+      <div
+        className="bg-red-100 py-4"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </>
   );
 };
