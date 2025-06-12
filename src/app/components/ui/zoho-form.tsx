@@ -641,6 +641,7 @@ export const ZohoForm: React.FC = () => {
             action="https://crm.zoho.in/crm/WebForm"
             acceptCharset="UTF-8"
             className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8"
+            onSubmit="return checkMandatory919410000000916380()"
             // onSubmit={handleSubmit}
           >
             {/* <form
@@ -679,6 +680,23 @@ export const ZohoForm: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Personal Information */}
+              <div className="zcwf_row">
+                <div className="zcwf_col_lab">
+                  <label htmlFor="NAME">
+                    facebook Inquiry 02 Name{" "}
+                    <span className="text-red-500">*</span>
+                  </label>
+                </div>
+                <div className="zcwf_col_fld">
+                  <input
+                    type="text"
+                    id="NAME"
+                    name="NAME"
+                    required
+                    className="w-full px-4 py-3 border rounded"
+                  />
+                </div>
+              </div>
               <div className="md:col-span-2">
                 <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
                   <Users className="h-5 w-5 mr-2 text-blue-600" />
