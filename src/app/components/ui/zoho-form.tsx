@@ -641,7 +641,20 @@ export const ZohoForm: React.FC = () => {
             action="https://crm.zoho.in/crm/WebForm"
             acceptCharset="UTF-8"
             className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8"
-            onSubmit="return checkMandatory919410000000916380()"
+            onSubmit={(e) => {
+              // Extend window type to include Zoho validation function
+              type ZohoWindow = typeof window & {
+                checkMandatory919410000000916380: () => boolean;
+              };
+              const ok = (
+                window as ZohoWindow
+              ).checkMandatory919410000000916380();
+              if (!ok) {
+                // prevent the native submit if validation failed
+                e.preventDefault();
+              }
+              // otherwise, let the form submit natively
+            }}
             // onSubmit={handleSubmit}
           >
             {/* <form
