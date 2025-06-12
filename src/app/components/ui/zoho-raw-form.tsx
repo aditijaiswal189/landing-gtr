@@ -32,7 +32,7 @@ export const ZohoRawForm: React.FC = () => {
 
     <!-- Your visible fields -->
     <div>
-      <label for="NAME">facebook Inquiry 02 Name *</label><br>
+      <label for="NAME"> Name *</label><br>
       <input type="text" id="NAME" name="NAME">
     </div>
 
