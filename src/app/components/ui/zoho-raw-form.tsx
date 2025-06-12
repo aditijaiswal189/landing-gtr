@@ -246,41 +246,6 @@ export const ZohoRawForm: React.FC = () => {
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-      <style jsx>{`
-        .zoho-wrapper {
-          max-width: 600px;
-          margin: 2rem auto;
-          padding: 1.5rem;
-          background: #fafafa;
-          border: 1px solid #ddd;
-          border-radius: 4px;
-        }
-        .zoho-wrapper #crmWebToEntityForm {
-          width: 100% !important;
-        }
-        .zoho-wrapper label {
-          display: block;
-          font-weight: bold;
-          margin-bottom: 0.3rem;
-        }
-        .zoho-wrapper input,
-        .zoho-wrapper select,
-        .zoho-wrapper textarea {
-          width: 100%;
-          padding: 0.5rem;
-          border: 1px solid #bbb;
-          border-radius: 4px;
-          box-sizing: border-box;
-        }
-        .zoho-wrapper .formsubmit {
-          background: #0279ff;
-          color: #fff;
-          padding: 0.75rem 1.5rem;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-        }
-      `}</style>
     </>
   );
 };

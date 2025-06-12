@@ -5,6 +5,40 @@
   --foreground: #171717;
 }
 
+/* styles/globals.css */
+#crmWebToEntityForm {
+  max-width: 600px !important;
+  margin: 2rem auto !important;
+  padding: 1rem !important;
+  background: #fafafa !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+  font-family: Arial, sans-serif !important;
+}
+#crmWebToEntityForm label {
+  display: block !important;
+  font-weight: bold !important;
+  margin-bottom: 0.3rem !important;
+}
+#crmWebToEntityForm input,
+#crmWebToEntityForm select,
+#crmWebToEntityForm textarea {
+  width: 100% !important;
+  padding: 0.5rem !important;
+  border: 1px solid #bbb !important;
+  border-radius: 4px !important;
+  box-sizing: border-box !important;
+  margin-bottom: 1rem !important;
+}
+#crmWebToEntityForm .formsubmit {
+  background: #0279ff !important;
+  color: #fff !important;
+  padding: 0.75rem 1.5rem !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
