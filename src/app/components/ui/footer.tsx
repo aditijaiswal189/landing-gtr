@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gradient-to-r from-red-200 to-orange-200 text-black py-12">
+    <footer className="bg-gradient-to-r from-red-300  to-orange-300 text-black py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
