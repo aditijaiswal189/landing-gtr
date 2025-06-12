@@ -456,6 +456,7 @@
 // };
 "use client";
 import { Award, CheckCircle, Users } from "lucide-react";
+import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 
 const indianStates = [
@@ -637,6 +638,7 @@ export const ZohoForm: React.FC = () => {
               name="returnURL"
               value="https://gtrworldwide.in/"
             />
+            <input type="hidden" name="aG9uZXlwb3Q" value="" />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Personal Information */}
@@ -898,6 +900,11 @@ export const ZohoForm: React.FC = () => {
               </button>
             </div>
           </form>
+          <Script
+            id="wf_anal"
+            strategy="beforeInteractive"
+            src="https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=1cd696fb72f453e3fae6e418ff8bc1eed89f2f8e9b9a8c3c75b8d73cced0dbf29fcceec3e9d92ad52cfcfe597b09674agid3f7dac3bb82cdfb34f6812d54c57a474596c77d1fecd4b385f6279d460a267ddgid222aafc7f89e0a40168633f75c5abd0caedb3592fc2c5a1299341d061386bc46gidb09d9af6a8a892a2f45bdeee5bd370a3d2adc300d91f4e64b99f95164ccfddd2&tw=edcdde99790317340fdf6ee361ac4e2e035d0bd577cb0da165b7cb335d58789d"
+          />
         </div>
       </section>
 
