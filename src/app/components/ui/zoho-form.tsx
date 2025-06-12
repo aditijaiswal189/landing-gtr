@@ -585,6 +585,43 @@ export const ZohoForm: React.FC = () => {
 
   return (
     <>
+      <Script
+        id="zoho-validate"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            function validateEmail919410000000916380(){
+              var form = document.forms['WebForm919410000000916380'];
+              var emailFld = form.querySelectorAll('[ftype=email]');
+              for(var i=0;i<emailFld.length;i++){
+                var val = emailFld[i].value.trim();
+                if(val){
+                  var atpos = val.indexOf('@'), dotpos = val.lastIndexOf('.');
+                  if(atpos<1||dotpos<atpos+2||dotpos+2>=val.length){
+                    alert('Please enter a valid email address.');
+                    emailFld[i].focus();
+                    return false;
+                  }
+                }
+              }
+              return true;
+            }
+            function checkMandatory919410000000916380(){
+              var mndFileds = ['NAME'], fldLangVal = ['facebook Inquiry 02 Name'];
+              for(var i=0;i<mndFileds.length;i++){
+                var f = document.forms['WebForm919410000000916380'][mndFileds[i]];
+                if(!f || !f.value.trim()){
+                  alert(fldLangVal[i] + ' cannot be empty.');
+                  f.focus();
+                  return false;
+                }
+              }
+              return validateEmail919410000000916380();
+            }
+          `,
+        }}
+      />
+
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
