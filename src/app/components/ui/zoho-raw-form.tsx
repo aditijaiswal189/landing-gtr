@@ -55,10 +55,10 @@ export const ZohoRawForm: React.FC = () => {
       <label for="COBJ11CF19">Age Group</label><br>
       <select id="COBJ11CF19" name="COBJ11CF19">
         <option value="">--Select--</option>
-        <option value="18-25 years">18‑25 years</option>
-        <option value="26-35 years">26‑35 years</option>
-        <option value="36-45 years">36‑45 years</option>
-        <option value="45+ years">45+ years</option>
+        <option value="18-25">18‑25</option>
+        <option value="26-35">26‑35</option>
+        <option value="36-45">36‑45</option>
+        <option value="45+">45+</option>
       </select>
     </div>
 
